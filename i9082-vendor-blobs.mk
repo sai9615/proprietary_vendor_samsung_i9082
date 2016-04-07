@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9082/proprietary/bin/vclmk:system/bin/vclmk \
     vendor/samsung/i9082/proprietary/bin/vcos-version:system/bin/vcos-version \
     vendor/samsung/i9082/proprietary/etc/asound.conf:system/etc/asound.conf \
-    vendor/samsung/i9082/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
     vendor/samsung/i9082/proprietary/etc/camera_info.ini:system/etc/camera_info.ini \
     vendor/samsung/i9082/proprietary/etc/DiamondVoice_Filter_NB.txt:system/etc/DiamondVoice_Filter_NB.txt \
     vendor/samsung/i9082/proprietary/etc/DiamondVoice_Filter_WB.txt:system/etc/DiamondVoice_Filter_WB.txt \
@@ -44,14 +43,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9082/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
     vendor/samsung/i9082/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
     vendor/samsung/i9082/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/samsung/i9082/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
     vendor/samsung/i9082/proprietary/etc/sensors.conf:system/etc/sensors.conf \
     vendor/samsung/i9082/proprietary/etc/srm.bin:system/etc/srm.bin \
     vendor/samsung/i9082/proprietary/etc/Volume.db:system/etc/Volume.db \
     vendor/samsung/i9082/proprietary/etc/wifi/bcmdhd_apsta.bin_b2:system/etc/wifi/bcmdhd_apsta.bin_b2 \
     vendor/samsung/i9082/proprietary/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
     vendor/samsung/i9082/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/i9082/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/i9082/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/i9082/proprietary/lib/hw/audio.hdmi.capri.so:system/lib/hw/audio.hdmi.capri.so \
     vendor/samsung/i9082/proprietary/lib/hw/audio.primary.capri.so:system/lib/hw/audio.primary.capri.so \
@@ -75,6 +72,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9082/proprietary/lib/libcontainers.so:system/lib/libcontainers.so \
     vendor/samsung/i9082/proprietary/lib/libdebug_sym.so:system/lib/libdebug_sym.so \
     vendor/samsung/i9082/proprietary/lib/libdispmanx.so:system/lib/libdispmanx.so \
+    vendor/samsung/i9082/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/i9082/proprietary/lib/libhdcp.so:system/lib/libhdcp.so \
     vendor/samsung/i9082/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/i9082/proprietary/lib/libHDCPKeyManager.so:system/lib/libHDCPKeyManager.so \
@@ -109,18 +107,20 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9082/proprietary/lib/libvcos.so:system/lib/libvcos.so \
     vendor/samsung/i9082/proprietary/lib/libVCOS.so:system/lib/libVCOS.so \
     vendor/samsung/i9082/proprietary/lib/libvcsm.so:system/lib/libvcsm.so \
-    vendor/samsung/i9082/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
-    vendor/samsung/i9082/proprietary/lib/libwvm.so:system/lib/libwvm.so \
     vendor/samsung/i9082/proprietary/lib/libWFC.so:system/lib/libWFC.so \
-    vendor/samsung/i9082/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/i9082/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
     vendor/samsung/i9082/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
     vendor/samsung/i9082/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
     vendor/samsung/i9082/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
     vendor/samsung/i9082/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
+    vendor/samsung/i9082/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/samsung/i9082/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/samsung/i9082/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
+    vendor/samsung/i9082/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/i9082/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/i9082/proprietary/vendor/lib/egl/libGLES_vc4.so:system/vendor/lib/egl/libGLES_vc4.so \
     vendor/samsung/i9082/proprietary/vendor/lib/hw/camera.capri.so:system/vendor/lib/hw/camera.capri.so \
     vendor/samsung/i9082/proprietary/vendor/lib/hw/gralloc.capri.so:system/vendor/lib/hw/gralloc.capri.so \
     vendor/samsung/i9082/proprietary/vendor/lib/hw/hwcomposer.capri.so:system/vendor/lib/hw/hwcomposer.capri.so \
     vendor/samsung/i9082/proprietary/vendor/lib/hw/lights.capri.so:system/vendor/lib/hw/lights.capri.so \
-    vendor/samsung/i9082/proprietary/vendor/lib/hw/power.capri.so:system/vendor/lib/hw/power.capri.so
+    vendor/samsung/i9082/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
