@@ -79,6 +79,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/i9082/proprietary/lib/libHDCPKeyManager.so:system/lib/libHDCPKeyManager.so \
     vendor/samsung/i9082/proprietary/lib/libhdmiaudio.so:system/lib/libhdmiaudio.so \
     vendor/samsung/i9082/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
+    vendor/samsung/i9082/proprietary/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
     vendor/samsung/i9082/proprietary/lib/libmmal.so:system/lib/libmmal.so \
     vendor/samsung/i9082/proprietary/lib/libmmal_components.so:system/lib/libmmal_components.so \
     vendor/samsung/i9082/proprietary/lib/libmmal_util.so:system/lib/libmmal_util.so \
